@@ -146,13 +146,9 @@ public class Main {
         Truck truck = new Truck("MAN", 2020, 140, 8, 30.5);
         Motorcycle bike = new Motorcycle("Ducati", 2024, 280, 2, false);
 
-        Vehicle[] vehicles = {car, truck, bike};
-
-        for (Vehicle v : vehicles) {
-            v.showInfo();
-            v.move();
-            System.out.println("-----------------------");
-        }
+        car.showInfo();
+        truck.showInfo();
+        bike.showInfo();
 
         System.out.println("Всего создано транспортных средств: " + Vehicle.getTotalVehicles());
     }
